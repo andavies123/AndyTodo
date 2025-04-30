@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndyTodo.Console", "AndyTodo.Console\AndyTodo.Console.csproj", "{807CBC32-210F-4F7C-AE2F-76613FAA8915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndyTodo", "AndyTodo\AndyTodo.csproj", "{4C64A5BC-0F5A-4822-9B8C-588155C71C7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{807CBC32-210F-4F7C-AE2F-76613FAA8915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{807CBC32-210F-4F7C-AE2F-76613FAA8915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{807CBC32-210F-4F7C-AE2F-76613FAA8915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{807CBC32-210F-4F7C-AE2F-76613FAA8915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C64A5BC-0F5A-4822-9B8C-588155C71C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C64A5BC-0F5A-4822-9B8C-588155C71C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C64A5BC-0F5A-4822-9B8C-588155C71C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C64A5BC-0F5A-4822-9B8C-588155C71C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
