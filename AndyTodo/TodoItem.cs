@@ -1,21 +1,26 @@
 ﻿namespace AndyTodo;
 
-public class TodoItem(string name, ICompletionFrequency timeEvent)
+public class TodoItem
 {
 	/// <summary>
 	/// Unique Id for this instance
 	/// </summary>
-	public string ItemId { get; } = Guid.NewGuid().ToString();
+	public string Id { get; init; } = Guid.NewGuid().ToString();
 
 	/// <summary>
 	/// Name for this instance
 	/// </summary>
-	public string Name { get; } = name;
+	public required string Name { get; set; }
 
 	/// <summary>
 	/// How often this item should be completed
 	/// </summary>
-	public ICompletionFrequency CompletionFrequency { get; } = timeEvent;
+	public required ICompletionFrequency CompletionFrequency { get; set; }
+
+	/// <summary>
+	/// The date we should start keeping track of this item
+	/// </summary>
+	public required DateTime StartDate { get; set; }
 }
 
 public interface ICompletionFrequency

@@ -1,4 +1,4 @@
-﻿using AndyTodo.Interfaces;
+﻿using AndyTodo.SaveSystem;
 using Autofac;
 
 namespace AndyTodo;
@@ -7,7 +7,7 @@ public class AndyTodoModule : Module
 {
 	protected override void Load(ContainerBuilder builder)
 	{
-		// Other
-		builder.RegisterType<TodoRepository>().As<ITodoRepository>().SingleInstance();
+		builder.RegisterType<ListManager>().As<IListManager>().SingleInstance();
+		builder.RegisterType<ListSaveManager>().As<IListSaveManager>().SingleInstance();
 	}
 }
