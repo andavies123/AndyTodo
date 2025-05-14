@@ -18,3 +18,20 @@ internal class ShowAllListsCommand(IListManager listManager) : ICommand
 		return true;
 	}
 }
+
+internal class AddTodoItemCommand(IListManager listManager) : ICommand
+{
+	public string Command => "add-todo-item";
+	public string HelpText => $"{Command} \"list name\" \"item name\"";
+
+	public bool TryParse(List<string> args)
+	{
+		if (args.Count < 2)
+			return false;
+
+		string listName = args[0];
+		string itemName = args[1];
+		
+		return true;
+	}
+}
